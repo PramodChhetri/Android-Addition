@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Calculator"
+        android:id="@+id/calculator"
+        android:textSize="32sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calculator"
+        android:text="First Number"
+        android:layout_marginTop="30dp"
+        android:textSize="24sp"
+        android:id="@+id/tv_FirstNumber"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_FirstNumber"
+        app:layout_constraintStart_toStartOf="@+id/tv_FirstNumber"
+        android:id="@+id/et_FirstNumber"
+        android:hint="Eg: 1"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/tv_FirstNumber"
+        app:layout_constraintTop_toBottomOf="@id/et_FirstNumber"
+        android:text="Second Number"
+        android:layout_marginTop="30dp"
+        android:textSize="24sp"
+        android:id="@+id/tv_SecondNumber"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_SecondNumber"
+        app:layout_constraintStart_toStartOf="@+id/tv_SecondNumber"
+        android:id="@+id/et_SecondNumber"
+        android:hint="Eg: 2"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_Calculate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_SecondNumber"
+        android:layout_marginTop="40dp"
+        android:text="Calculate"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result :"
+        app:layout_constraintTop_toBottomOf="@id/btn_Calculate"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="40dp"
+        android:textSize="30sp"
+        android:id="@+id/tv_Result"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btn_Calculate"
+        app:layout_constraintStart_toEndOf="@+id/tv_Result"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/tv_SResult"
+        android:textSize="30sp"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
